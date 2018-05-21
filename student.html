@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>student</title>
+        <link rel="stylesheet" href="bootstrap.css"/>
+        <style type="text/css">
+        label{
+            font-weight:bold;
+        }
+        h1{
+            text-align:center;
+            color:red;
+            padding: 10px;
+        }
+        body{
+            background: url('image/blue_bg.jpg');
+        }
+        </style>
+    <head>
+    <body>
+        <div>
+            <h1><b>Student Management System</b></h1>
+        </div> 
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <form class="form-control" action='php/student_submit.php' method='POST'>
+                    <h3><b>Resgistration Form</b></h3>
+                    <label>First Name :</label><br>
+                    <input class="form-control" type='text' name='first_name' value="" placeholder="Bhuvan" required=""><br>
+                    <label>Last Name  :</label><br>
+                    <input class="form-control" type='text' name='last_name' value="" placeholder="Chandra" required=""><br>
+                    <label>College ID :</label><br>
+                    <input class="form-control" type='text' name='id' value="" placeholder="123456789" required=""><br>
+                    <label>College Name :</label><br>
+                    <input class="form-control" type='text' name='college_name' value="" placeholder="Tiu" required=""><br>
+                    <label>Gender     :</label><br>
+                    <input type='radio' name='gender' value='male'>Male<br>
+                    <input type='radio' name='gender' value='female'>Female<br>
+                    <input type='radio' name='gender' value='other'>Other<br>
+                
+                    <input class="btn btn-success" type='submit'>
+                    <input class="btn btn-danger" type="reset" value="Reset">
+                    </form>
+                </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <form class="form-control" action='php/search.php' method='POST'>
+                <h3><b>View Student Info</b></h3>
+                    <label>College ID :</label><br>
+                    <input class="form-control" type='text' name='id' value="" placeholder="1234" required=""><br>
+                    
+                    <input class="btn btn-success" type='submit'> 
+                </form>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <form class="form-control" action='php/update.php' method='POST'>
+                <h3><b>Update Student Info</b></h3>
+                    <label>Enter College-ID to Update:</label><br>
+                    <input class="form-control" type='text' name='id'><br><br><br>
+                    <label>Enter the Credential to Update</label><br>
+                    <label>First Name:</label><br>
+                    <input class="form-control" type='text' name='first_name' value="" placeholder="Bhuvan" required=""><br>
+                    <label>Last Name :</label><br>
+                    <input class="form-control" type='text' name='last_name' value="" placeholder="chandra" required=""><br>
+                    <label>College Name :</label><br>
+                    <input class="form-control" type='text' name='college_name' value="" placeholder="TIU" required=""><br>
+                    
+                    <input class="btn btn-success" type='submit'>
+                    <input class="btn btn-danger" type='reset' value="Reset">
+                </form>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
